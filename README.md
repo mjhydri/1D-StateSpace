@@ -1,4 +1,70 @@
 # 1D-StateSpace
-This repository contains the source code of The 1D state space and inference model for joint music time analysis proposed in ICASSP2022 venue.
 
-Note: The source code, videos and further information will be added here soon.
+This repository contains the source code and demo videos of a joint music rhythmic analyzer system using the 1D state space and jump reward technique proposed in ICASSP-2022. This implementation includes music beat, downbeat, tempo, and meter tracking jointly and in a causal fashion. 
+
+Note: The source code will be added here soon.
+
+___________________________________________________________________
+Installation command:
+
+pip install git+https://github.com/mjhydri/1D-StateSpace
+___________________________________________________________________
+Usage example:
+
+Inferer = BeatNet_1D(1,'DM') 
+
+beats,downbeats =estimator.process("music file directory")
+___________________________________________________________________
+Video Demos:  
+
+This section demonstrates the system performance for several music genres. Each demo comprises four plots that are described as follows:  
+
+* The first plot: 1D state space for music beat and tempo tracking. Each bar represents the posterior probability of the corresponding state at each time frame.
+* The second plot: The jump-back reward vector for the corresponding beat states. 
+* The third plot:1D state space for music downbeat and meter tracking.
+* The fourth plot: The jump-back reward vector for the corresponding downbeat states. 
+
+
+1: Music Genre: Pop
+  
+[![Easy song](https://img.youtube.com/vi/YXGzvLe6bSQ/0.jpg)](https://youtu.be/YXGzvLe6bSQ)
+  
+
+
+
+2: Music Genre: Reggae
+  
+[![Easy song](https://img.youtube.com/vi/VnDBmXWemPI/0.jpg)](https://youtu.be/VnDBmXWemPI)
+  
+
+
+
+3: Music Genre: Country
+  
+[![Easy song](https://img.youtube.com/vi/-9Lwirn6YAI/0.jpg)](https://youtu.be/-9Lwirn6YAI)
+  
+
+
+
+4: Music Genre: Blues
+  
+  
+[![Easy song](https://img.youtube.com/vi/CcUe3P0Y9BM/0.jpg)](https://youtu.be/CcUe3P0Y9BM)
+  
+
+
+
+5: Music Genre: Classical
+  
+  [![Easy song](https://img.youtube.com/vi/fl2ErbGrbyo/0.jpg)](https://youtu.be/fl2ErbGrbyo)
+  
+
+Demos Conclusion:
+
+1- For some genres such as pop and country, due to the rich percussive content, solid attacks, and simpler rhythmic structures, The process is straightforward. However, it is more challenging for genres with poor percussive profile, longer attack times, and more complex rhythmic structures such as Classical music. 
+
+2- Since both neural networks and inference models are designed for online/real-time applications, the system is causal, and future data is not accessible. It makes the belief state and the actual jump weight weak initially and become stronger over time. 
+
+3- Given longer listening time is required to infer higher hierarchies, i.e., downbeat and meter, within the first few seconds, downbeat results are less confident than lower hierarchies, i.e., beat and tempo.   
+
+
