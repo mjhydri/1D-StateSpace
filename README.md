@@ -31,27 +31,22 @@ This section demonstrates the system performance for several music genres. Each 
   
 
 
-
-2: Music Genre: Reggae
-  
-[![Easy song](https://img.youtube.com/vi/VnDBmXWemPI/0.jpg)](https://youtu.be/VnDBmXWemPI)
-  
-
-
-
-3: Music Genre: Country
+2: Music Genre: Country
   
 [![Easy song](https://img.youtube.com/vi/-9Lwirn6YAI/0.jpg)](https://youtu.be/-9Lwirn6YAI)
+
   
+
+3: Music Genre: Reggae
+  
+[![Easy song](https://img.youtube.com/vi/VnDBmXWemPI/0.jpg)](https://youtu.be/VnDBmXWemPI)
 
 
 
 4: Music Genre: Blues
   
-  
 [![Easy song](https://img.youtube.com/vi/CcUe3P0Y9BM/0.jpg)](https://youtu.be/CcUe3P0Y9BM)
   
-
 
 
 5: Music Genre: Classical
