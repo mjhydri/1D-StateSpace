@@ -2,20 +2,44 @@
 
 This repository contains the source code and demo videos of a joint music rhythmic analyzer system using the 1D state space and jump reward technique proposed in ICASSP-2022. This implementation includes music beat, downbeat, tempo, and meter tracking jointly and in a causal fashion. 
 
-Note: The source code will be added here soon.
+The model first takes the waveform to the spectral domain and then feeds them into one of the pre-trained BeatNet models to obtain beat/downbeat activations.
+Finally, the activations are used in a jump-reward inference model to infer beats, downbeats, tempo, and meter. 
+
+** Note: The source code and the user package will be uploaded on January 21, 2022.
+
+system input:
+-------------
+Raw audio waveform 
+
+System output:
+--------------
+A vector including beats, downbeats, local tempo, and local meter columns, respectively.  shape (num_beats, 4).
+
+References:
+-----------
+M. Heydari, M. McCallum, A. Ehmann and Z. Duan, "A NOVEL 1D STATE SPACE FOR EFFICIENT MUSIC RHYTHMIC ANALYSIS", In Proc. IEEE Int. Conf. Acoust. Speech
+Signal Process. (ICASSP), 2022. #(Submitted)
+
+M.  Heydari,  F.  Cwitkowitz,  and  Z.  Duan,    “BeatNet:CRNN and particle filtering for online joint beat down-beat and meter tracking,” in Proc. of the 22th Intl. 
+Conf.on Music Information Retrieval (ISMIR), 2021.
 
 ___________________________________________________________________
 Installation command:
+---------------------
 
 pip install git+https://github.com/mjhydri/1D-StateSpace
 ___________________________________________________________________
 Usage example:
+--------------
 
-Inferer = BeatNet_1D(1,'DM') 
+estimator = joint inference(1) 
 
-beats,downbeats =estimator.process("music file directory")
+output =estimator.process("music file directory")
+
+
 ___________________________________________________________________
-Video Demos:  
+Video Demos:
+------------
 
 This section demonstrates the system performance for several music genres. Each demo comprises four plots that are described as follows:  
 
