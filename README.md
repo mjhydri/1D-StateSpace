@@ -77,7 +77,7 @@ This section demonstrates the system performance for several music genres. Each 
 
 Demos Discussion:
 -----------------
-1- As demo videos suggest, the system infers multiple music rhythmic parameters, including music beat, downbeat, tempo and meter in an online fashion and using very compact 1D state spaces and jump back reward technique. The system works suitably for different music genres. However, the process is relatively more straightforward for some genres such as pop and country due to the rich percussive content, solid attacks, and simpler rhythmic structures. However, it is more challenging for genres with poor percussive profile, longer attack times, and more complex rhythmic structures such as Classical music. 
+1- As demo videos suggest, the system infers multiple music rhythmic parameters, including music beat, downbeat, tempo and meter jointly and in an online fashion using very compact 1D state spaces and jump back reward technique. The system works suitably for different music genres. However, the process is relatively more straightforward for some genres such as pop and country due to the rich percussive content, solid attacks, and simpler rhythmic structures. In contrast, it is more challenging for genres with poor percussive profile, longer attack times, and more complex rhythmic structures such as classical music. 
 
 2- Since both neural networks and inference models are designed for online/real-time applications, the causalilty constrains are applied and future data is not accessible. It makes the jumpback weigths weaker initially and become stronger over time. 
 
