@@ -17,11 +17,13 @@ A vector including beats, downbeats, local tempo, and local meter columns, respe
 
 References:
 -----------
-M. Heydari, M. McCallum, A. Ehmann and Z. Duan, "A NOVEL 1D STATE SPACE FOR EFFICIENT MUSIC RHYTHMIC ANALYSIS", In Proc. IEEE Int. Conf. Acoust. Speech
+M. Heydari, M. McCallum, A. Ehmann and Z. Duan, "A Novel 1D State Space for Efficient Music Rhythmic Analysis", In Proc. IEEE Int. Conf. Acoust. Speech
 Signal Process. (ICASSP), 2022. #(Submitted)
 
 M.  Heydari,  F.  Cwitkowitz,  and  Z.  Duan,    “BeatNet:CRNN and particle filtering for online joint beat down-beat and meter tracking,” in Proc. of the 22th Intl. 
 Conf.on Music Information Retrieval (ISMIR), 2021.
+
+M. Heydari and Z. Duan, “Don’t Look Back: An online beat  tracking  method  using  RNN  and  enhanced  particle filtering,”  in Proc. IEEE Int. Conf. Acoust. Speech Signal Process. (ICASSP), 2021.
 
 Installation Command:
 ---------------------
