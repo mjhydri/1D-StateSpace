@@ -31,7 +31,7 @@ pip install git+https://github.com/mjhydri/1D-StateSpace
 
 Usage Example:
 --------------
-estimator = joint inference(1) 
+estimator = joint inference(1, plot=True) 
 
 output = estimator.process("music file directory")
 
