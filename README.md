@@ -23,21 +23,16 @@ Signal Process. (ICASSP), 2022. #(Submitted)
 M.  Heydari,  F.  Cwitkowitz,  and  Z.  Duan,    “BeatNet:CRNN and particle filtering for online joint beat down-beat and meter tracking,” in Proc. of the 22th Intl. 
 Conf.on Music Information Retrieval (ISMIR), 2021.
 
-___________________________________________________________________
 Installation Command:
 ---------------------
-
 pip install git+https://github.com/mjhydri/1D-StateSpace
-___________________________________________________________________
+
 Usage Example:
 --------------
-
 estimator = joint inference(1) 
 
 output =estimator.process("music file directory")
 
-
-___________________________________________________________________
 Video Demos:
 ------------
 
@@ -80,8 +75,7 @@ This section demonstrates the system performance for several music genres. Each 
 
 Demos Discussion:
 -----------------
-
-1- For some genres such as pop and country, due to the rich percussive content, solid attacks, and simpler rhythmic structures, The process is straightforward. However, it is more challenging for genres with poor percussive profile, longer attack times, and more complex rhythmic structures such as Classical music. 
+1- As demo videos suggest, for some genres such as pop and country, the process is relatively more straightforward due to the rich percussive content, solid attacks, and simpler rhythmic structures. However, it is more challenging for genres with poor percussive profile, longer attack times, and more complex rhythmic structures such as Classical music. 
 
 2- Since both neural networks and inference models are designed for online/real-time applications, the system is causal, and future data is not accessible. It makes the belief state and the actual jump weight weak initially and become stronger over time. 
 
