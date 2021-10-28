@@ -33,7 +33,7 @@ Usage Example:
 --------------
 estimator = joint inference(1) 
 
-output =estimator.process("music file directory")
+output = estimator.process("music file directory")
 
 Video Demos:
 ------------
