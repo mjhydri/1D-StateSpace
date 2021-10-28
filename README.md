@@ -7,11 +7,11 @@ Finally, the activations are used in a jump-reward inference model to infer beat
 
 ** Note: The source code and the user package will be uploaded on January 21, 2022.
 
-system input:
+System Input:
 -------------
 Raw audio waveform 
 
-System output:
+System Output:
 --------------
 A vector including beats, downbeats, local tempo, and local meter columns, respectively.  shape (num_beats, 4).
 
@@ -24,12 +24,12 @@ M.  Heydari,  F.  Cwitkowitz,  and  Z.  Duan,    “BeatNet:CRNN and particle fi
 Conf.on Music Information Retrieval (ISMIR), 2021.
 
 ___________________________________________________________________
-Installation command:
+Installation Command:
 ---------------------
 
 pip install git+https://github.com/mjhydri/1D-StateSpace
 ___________________________________________________________________
-Usage example:
+Usage Example:
 --------------
 
 estimator = joint inference(1) 
@@ -78,7 +78,8 @@ This section demonstrates the system performance for several music genres. Each 
   [![Easy song](https://img.youtube.com/vi/fl2ErbGrbyo/0.jpg)](https://youtu.be/fl2ErbGrbyo)
   
 
-Demos Conclusion:
+Demos Discussion:
+-----------------
 
 1- For some genres such as pop and country, due to the rich percussive content, solid attacks, and simpler rhythmic structures, The process is straightforward. However, it is more challenging for genres with poor percussive profile, longer attack times, and more complex rhythmic structures such as Classical music. 
 
