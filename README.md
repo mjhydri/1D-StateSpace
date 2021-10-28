@@ -5,7 +5,7 @@ This repository contains the source code and demo videos of a joint music rhythm
 The model first takes the waveform to the spectral domain and then feeds them into one of the pre-trained BeatNet models to obtain beat/downbeat activations.
 Finally, the activations are used in a jump-reward inference model to infer beats, downbeats, tempo, and meter. 
 
-** Note: The source code and the user package will be uploaded on January 21, 2022.
+** Note: The source code and the user package will be uploaded soon.
 
 System Input:
 -------------
@@ -13,7 +13,7 @@ Raw audio waveform
 
 System Output:
 --------------
-A vector including beats, downbeats, local tempo, and local meter columns, respectively.  shape (num_beats, 4).
+A vector including beats, downbeats, local tempo, and local meter columns, respectively and with the following shape: numpy_array(num_beats, 4).
 
 References:
 -----------
