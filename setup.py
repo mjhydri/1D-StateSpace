@@ -61,7 +61,7 @@ setuptools.setup(
     },
 
     # Package details
-    name="1D state space",
+    name="jump-reward-inference",
     version="0.0.1",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
