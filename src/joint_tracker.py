@@ -21,7 +21,7 @@ Conf.on Music Information Retrieval (ISMIR), 2021.
 import os
 import torch
 import numpy as np
-from joint-tracker import deterministic_1D
+from jump_reward_inference import deterministic_1D
 import sys
 from BeatNet.BeatNet import BeatNet
 

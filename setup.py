@@ -61,7 +61,7 @@ setuptools.setup(
     },
 
     # Package details
-    name="jump-reward-inference",
+    name="jump_reward_inference",
     version="0.0.1",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
