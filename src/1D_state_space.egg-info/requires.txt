@@ -1,0 +1,11 @@
+numpy
+Cython
+librosa>=0.8.0
+numba==0.48.0
+scipy
+mido>=1.2.6
+pytest
+madmom
+torch
+Matplotlib
+BeatNet
