@@ -28,7 +28,7 @@ import sys
 from model import BDA
 
 class joint_inference:
-    def __init__(self, model):
+    def __init__(self, model, plot=False):
         self.sample_rate = 22050
         log_spec_sample_rate = self.sample_rate
         log_spec_hop_length = int(20 * 0.001 * log_spec_sample_rate)  
@@ -48,7 +48,7 @@ class joint_inference:
         else:
             raise RuntimeError(f'Failed to open the trained model: {model}')
         self.model.eval()
-        self.estimator = deterministic_1D(beats_per_bar=[], fps=50, plot=True)
+        self.estimator = deterministic_1D(beats_per_bar=[], fps=50, plot=plot)
 
     def process(self, audio_path):
         with torch.no_grad():
@@ -67,5 +67,5 @@ class joint_inference:
         return output
 
 # Usage:
-estimator = joint_inference(1)
-output = estimator.process("C:/datasets/testdata/123.mp3")
+# estimator = joint_inference(1,plot=True)
+# output = estimator.process("C:/datasets/testdata/123.mp3")
