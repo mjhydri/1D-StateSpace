@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from state_space_1D import beat_state_space_1D, downbeat_state_space_1D
-import joint_tracker
 
 
 class BDObservationModel:
@@ -113,7 +112,7 @@ def densities2(observations, observation_model, state_model):
 #     return new_obs
 
 
-class deterministic_1D: 
+class inference_1D:
     '''
         Running the jump-reward inference for the 1D state spaces over the given activation functions to infer music rhythmic information jointly.
 
@@ -222,6 +221,8 @@ class deterministic_1D:
                 obs = densities(activations[i], self.om, self.st)
                 beat_distribution_old = beat_distribution.copy()
                 beat_distribution = beat_distribution_old * obs
+                if np.min(beat_distribution) < 1e-5:   # normalize beat distribution if its minimum is below a threshold
+                    beat_distribution = 0.8 * beat_distribution / np.max(beat_distribution)
                 beat_max = np.argmax(beat_distribution)
                 beat_jump_rewards2 = beat_distribution - beat_distribution_old  # beat correction rewards calculation
                 beat_jump_rewards = beat_jump_rewards2
@@ -258,6 +259,8 @@ class deterministic_1D:
                     obs2 = densities2(both_activations[i], self.om2, self.st2)
                     down_distribution_old = down_distribution.copy()
                     down_distribution = down_distribution_old * obs2
+                    if np.min(down_distribution) < 1e-5: # normalize downbeat distribution if its minimum is below a threshold
+                        down_distribution = 0.8 * down_distribution/np.max(down_distribution)
                     down_max = np.argmax(down_distribution)
                     down_jump_rewards2 = down_distribution - down_distribution_old  # downbeat correction rewards calculation
                     down_jump_rewards = down_jump_rewards2
@@ -279,7 +282,7 @@ class deterministic_1D:
                 else:
                     output = np.append(output, [[counter * T + self.offset, 2, local_tempo, meter]], axis=0)
                     last_detected = "Beat"
-                if self.plot:
+                if self.plot and counter>5000: #and counter>5000
                     subplot3.cla()
                     subplot4.cla()
                     down_distribution = down_distribution / np.max(down_distribution)
@@ -300,7 +303,7 @@ class deterministic_1D:
                     position2 = down_max
                     subplot3.axvline(x=position2)
 
-            if self.plot:  # activates this when you want to plot the performance
+            if self.plot and counter>5000:  # and counter>5000  # activates this when you want to plot the performance
                 if counter % 1 == 0:  # Choosing how often to plot
                     print(counter)
                     subplot1.cla()

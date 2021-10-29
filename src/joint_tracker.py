@@ -14,33 +14,28 @@ References:
 M. Heydari, M. McCallum, A. Ehmann and Z. Duan, "A NOVEL 1D STATE SPACE FOR EFFICIENT MUSIC RHYTHMIC ANALYSIS", In Proc. IEEE Int. Conf. Acoust. Speech
 Signal Process. (ICASSP), 2022. #(Submitted)
 
-M.  Heydari,  F.  Cwitkowitz,  and  Z.  Duan,    “BeatNet:CRNN and particle filtering for online joint beat down-beat and meter tracking,” inProc. of the 22th Intl. 
+M.  Heydari,  F.  Cwitkowitz,  and  Z.  Duan,    “BeatNet:CRNN and particle filtering for online joint beat down-beat and meter tracking,” in Proc. of the 22th Intl.
 Conf.on Music Information Retrieval (ISMIR), 2021.
 
 """
-import os
-import torch
-import numpy as np
-from jump_reward_inference import deterministic_1D
-import sys
+from Inference_1D import inference_1D
 from BeatNet.BeatNet import BeatNet
 
-# instance = BeatNet(1)
-# Output = instance.process("C:/datasets/testdata/123.mp3", 'PF', plot=True)
-# print("hi")
 
-class joint_inference:
+class joint_inference():
     def __init__(self, model, plot=False):
-        activation_estimator = BeatNet(model)
-        self.plot = plot
-        self.inferer = deterministic_1D(beats_per_bar=[], fps=50, plot=plot)
+        self.activation_estimator = BeatNet(model)
+        self.estimator = inference_1D(beats_per_bar=[], fps=50, plot=plot)
 
     def process(self, audio_path):
-            preds =  BeatNet.activation_extractor(audio_path)
-            output = self.inferer.process(preds)
+        preds = self.activation_estimator.activation_extractor(
+            audio_path)  # extracting the activations using the BeatNet nueral network
+        output = self.estimator.process(
+            preds)  # infering online joing beat, downbeat, tempo and meter using the 1D state space and jump back reward technique
         return output
-#
-# # Usage:
-# # estimator = joint_inference(1,plot=True)
-# # output = estimator.process("C:/datasets/testdata/123.mp3")
-# from BeatNet import BeatNet
+
+
+# Usage example:
+# estimator = joint_inference(1, plot=False)
+# output = estimator.process("C:/datasets/testdata/123.mp3")
+# print(output)
