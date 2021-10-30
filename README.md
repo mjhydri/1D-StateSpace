@@ -27,6 +27,12 @@ M. Heydari and Z. Duan, “Don’t Look Back: An online beat  tracking  method  
 
 Installation Command:
 ---------------------
+Approach #1: Installing binaries from the pypi website:
+
+pip install jump-reward-inference
+
+Approach #2: Installing directly from the Git repository:
+
 pip install git+https://github.com/mjhydri/1D-StateSpace
 
 Usage Example:
