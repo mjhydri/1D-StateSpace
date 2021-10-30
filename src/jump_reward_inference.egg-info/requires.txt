@@ -1,8 +1,7 @@
 numpy
 Cython
 librosa>=0.8.0
-numba==0.48.0
-scipy
+numba==0.54.1
 mido>=1.2.6
 pytest
 torch
