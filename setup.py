@@ -52,6 +52,7 @@ class MakeReqsCommand(distutils.cmd.Command):
         for req in REQUIRED_PACKAGES:
             f.write(req)
             f.write('\n')
+            f.write(req)
 
 
 
@@ -67,7 +68,7 @@ setuptools.setup(
     packages=find_packages(where="src"),
     # packages=find_packages(),
     include_package_data=True,
-    install_requires=REQUIRED_PACKAGES,
+    install_requires=REQUIRED_PACKAGES,requirements
 
     # Metadata to display on PyPI
     author="Mojtaba Heydari",
