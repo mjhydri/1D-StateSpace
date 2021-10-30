@@ -8,4 +8,3 @@ src/jump_reward_inference.egg-info/SOURCES.txt
 src/jump_reward_inference.egg-info/dependency_links.txt
 src/jump_reward_inference.egg-info/requires.txt
 src/jump_reward_inference.egg-info/top_level.txt
-src/models/__init__.py
