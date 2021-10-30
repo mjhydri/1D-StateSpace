@@ -26,7 +26,6 @@ REQUIRED_PACKAGES = [
     'pytest',
     #'pyaudio',
     ##'pyfftw',
-    'madmom',
     'torch',
     'Matplotlib',
     'BeatNet>=0.0.2'
@@ -53,6 +52,7 @@ class MakeReqsCommand(distutils.cmd.Command):
         for req in REQUIRED_PACKAGES:
             f.write(req)
             f.write('\n')
+
 
 
 setuptools.setup(
