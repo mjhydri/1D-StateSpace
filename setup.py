@@ -17,16 +17,15 @@ import distutils.cmd
 
 # Required packages
 REQUIRED_PACKAGES = [
-    'numpy',
+    'numpy==1.20.3',
     'Cython',
     'librosa>=0.8.0',
-    'numba==0.48.0', # Manually specified here as librosa incorrectly states that it is compatible with the latest version of numba although 0.50.0 is not compatible. 
+    'numba==0.54.1', # Manually specified here as librosa incorrectly states that it is compatible with the latest version of numba although 0.50.0 is not compatible. 
     'scipy',
     'mido>=1.2.6',
     'pytest',
     'torch',
     'Matplotlib',
-    'madmom',
     'BeatNet>=0.0.2',
 ]
 
