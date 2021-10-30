@@ -7,4 +7,5 @@ mido>=1.2.6
 pytest
 torch
 Matplotlib
+madmom
 BeatNet>=0.0.2
