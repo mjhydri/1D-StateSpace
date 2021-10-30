@@ -28,7 +28,7 @@ REQUIRED_PACKAGES = [
     ##'pyfftw',
     'torch',
     'Matplotlib',
-    'BeatNet>=0.0.3',
+    'BeatNet>=0.0.4',
     'madmom',
 ]
 
@@ -63,7 +63,7 @@ setuptools.setup(
 
     # Package details
     name="jump_reward_inference",
-    version="0.0.2",
+    version="0.0.3",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     # packages=find_packages(),

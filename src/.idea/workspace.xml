@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="811ceeaa-7db8-4f46-b45b-0b02304f40bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../dist/jump_reward_inference-0.0.0-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dist/jump_reward_inference-0.0.0.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/../setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump_reward_inference.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump_reward_inference.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump_reward_inference.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump_reward_inference.egg-info/requires.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump_reward_inference.egg-info/top_level.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="811ceeaa-7db8-4f46-b45b-0b02304f40bb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
