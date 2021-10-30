@@ -28,7 +28,7 @@ REQUIRED_PACKAGES = [
     ##'pyfftw',
     'torch',
     'Matplotlib',
-    'BeatNet>=0.0.2',
+    'BeatNet>=0.0.3',
     'madmom',
 ]
 
