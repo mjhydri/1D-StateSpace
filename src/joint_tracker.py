@@ -36,6 +36,6 @@ class joint_inference():
 
 
 # Usage example:
-# estimator = joint_inference(1, plot=False)
-# output = estimator.process("C:/datasets/testdata/123.mp3")
-# print(output)
+estimator = joint_inference(1, plot=False)
+output = estimator.process("C:/datasets/testdata/123.mp3")
+print(output)

@@ -29,7 +29,7 @@ REQUIRED_PACKAGES = [
     'madmom',
     'torch',
     'Matplotlib',
-    'BeatNet'
+    'BeatNet>=0.0.2'
 ]
 
 
