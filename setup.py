@@ -24,8 +24,6 @@ REQUIRED_PACKAGES = [
     'scipy',
     'mido>=1.2.6',
     'pytest',
-    #'pyaudio',
-    ##'pyfftw',
     'torch',
     'Matplotlib',
     'madmom',
@@ -53,7 +51,6 @@ class MakeReqsCommand(distutils.cmd.Command):
         for req in REQUIRED_PACKAGES:
             f.write(req)
             f.write('\n')
-            f.write(req)
 
 
 
