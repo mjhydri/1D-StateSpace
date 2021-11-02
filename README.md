@@ -1,5 +1,12 @@
 # 1D-StateSpace
 
+[![PyPI](https://img.shields.io/pypi/v/jump-reward-inference.svg)](https://pypi.org/project/jump-reward-inference/)
+[![CC BY 4.0][cc-by-shield]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
 This repository contains the source code and demo videos of a joint music rhythmic analyzer system using the 1D state space and jump reward technique proposed in ICASSP-2022. This implementation includes music beat, downbeat, tempo, and meter tracking jointly and in a causal fashion. 
 
 The model first takes the waveform to the spectral domain and then feeds them into one of the pre-trained BeatNet models to obtain beat/downbeat activations.
@@ -88,4 +95,6 @@ Demos Discussion:
 
 3- Given longer listening time is required to infer higher hierarchies, i.e., downbeat and meter, within the very early few seconds, downbeat results are less confident than lower hierarchies, i.e., beat and tempo, however, they get accurate after observing a bar period.     
 
-
+ACKNOWLEDGEMENT
+---------------
+This work has been partially supported by the National Science Foundation grant 1846184.
