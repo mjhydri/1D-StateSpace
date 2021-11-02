@@ -36,10 +36,11 @@ pip install git+https://github.com/mjhydri/1D-StateSpace
 ```
 Usage Example:
 --------------
+```
 estimator = joint_inference(1, plot=True) 
 
 output = estimator.process("music file directory")
-
+```
 Video Demos:
 ------------
 
