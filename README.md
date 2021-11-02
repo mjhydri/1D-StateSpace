@@ -1,4 +1,6 @@
-# 1D-StateSpace
+# Jump Reward Inference for the 1D State Space 
+
+An implementation of the probablistic jump reward inference model for music rhythmic information retrieval using the proposed 1D state space. 
 
 [![PyPI](https://img.shields.io/pypi/v/jump-reward-inference.svg)](https://pypi.org/project/jump-reward-inference/)
 [![CC BY 4.0][cc-by-shield]][cc-by]
