@@ -9,6 +9,8 @@ An implementation of the probablistic jump reward inference model for music rhyt
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-1d-state-space-for-efficient-music/online-beat-tracking-on-gtzan)](https://paperswithcode.com/sota/online-beat-tracking-on-gtzan?p=a-novel-1d-state-space-for-efficient-music)
+
 This repository contains the source code and demo videos of a joint music rhythmic analyzer system using the 1D state space and jump reward technique proposed in ICASSP-2022. This implementation includes music beat, downbeat, tempo, and meter tracking jointly and in a causal fashion. 
 
 *[arXiv 2111.00704](https://arxiv.org/abs/2111.00704)*
