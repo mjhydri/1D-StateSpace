@@ -95,7 +95,7 @@ Demos Discussion:
 
 Acknowledgement
 ---------------
-This work has been partially supported by the National Science Foundation grant 1846184.
+Many thanks to Pandora/SiriusXM Inc. research team for making it possible legally to publish the source code of the project. Also this work has been partially supported by the National Science Foundation grant 1846184.
 
 References:
 -----------
