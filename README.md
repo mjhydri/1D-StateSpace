@@ -11,6 +11,8 @@ An implementation of the probablistic jump reward inference model for music rhyt
 
 This repository contains the source code and demo videos of a joint music rhythmic analyzer system using the 1D state space and jump reward technique proposed in ICASSP-2022. This implementation includes music beat, downbeat, tempo, and meter tracking jointly and in a causal fashion. 
 
+*[arXiv 2111.00704](https://arxiv.org/abs/2111.00704)*
+
 The model first takes the waveform to the spectral domain and then feeds them into one of the pre-trained BeatNet models to obtain beat/downbeat activations.
 Finally, the activations are used in a jump-reward inference model to infer beats, downbeats, tempo, and meter. 
 
