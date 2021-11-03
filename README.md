@@ -1,4 +1,4 @@
-# Jump Reward Inference for the 1D State Space 
+# Jump Reward Inference for 1D Music Rhythmic State Spaces 
 
 An implementation of the probablistic jump reward inference model for music rhythmic information retrieval using the proposed 1D state space. 
 
