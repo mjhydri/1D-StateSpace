@@ -95,7 +95,7 @@ Demos Discussion:
 
 Acknowledgement
 ---------------
-Many thanks to the Pandora/SiriusXM Inc. research team for making it legal to publish the project's source code. Also, this work has been partially supported by the National Science Foundation grant 1846184.
+Many thanks to the Pandora/SiriusXM Inc. research team for making it legal to publish the project's source code. For the loading the raw aduio and input features extraction [Librosa](https://github.com/librosa/librosa) and [Madmom](https://github.com/CPJKU/madmom) libraries are ustilzed respectively. Many thanks for their great jobs. This work has been partially supported by the National Science Foundation grant 1846184.
 
 References:
 -----------
