@@ -18,7 +18,7 @@ M.  Heydari,  F.  Cwitkowitz,  and  Z.  Duan,    “BeatNet:CRNN and particle fi
 Conf.on Music Information Retrieval (ISMIR), 2021.
 
 """
-from jump_reward_inference import Inference_1D
+from jump_reward_inference import inference_1D
 from BeatNet.BeatNet import BeatNet
 
 
