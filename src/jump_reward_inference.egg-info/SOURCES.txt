@@ -4,7 +4,7 @@ README.md
 pyproject.toml
 setup.py
 src/jump_reward_inference/__init__.py
-src/jump_reward_inference/inference_1D.py
+src/jump_reward_inference/inference.py
 src/jump_reward_inference/joint_tracker.py
 src/jump_reward_inference/state_space_1D.py
 src/jump_reward_inference.egg-info/PKG-INFO
