@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fadffd9a-115c-48cb-88c4-ba0320978b52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/jump_reward_inference-0.0.4-py3-none-any.whl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/jump_reward_inference-0.0.4.tar.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/PKG-INFO" beforeDir="false" />
@@ -10,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/dependency_links.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/requires.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jump_reward_inference/inference_1D.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/jump_reward_inference/inference.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jump_reward_inference/joint_tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/jump_reward_inference/joint_tracker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

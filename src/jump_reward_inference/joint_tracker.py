@@ -34,8 +34,3 @@ class joint_inference():
             preds)  # infering online joing beat, downbeat, tempo and meter using the 1D state space and jump back reward technique
         return output
 
-
-# Usage example:
-estimator = joint_inference(1, plot=False)
-output = estimator.process("C:/datasets/testdata/123.mp3")
-print(output)
