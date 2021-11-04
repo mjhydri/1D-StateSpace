@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from state_space_1D import beat_state_space_1D, downbeat_state_space_1D
+from jump_reward_inference.state_space_1D import beat_state_space_1D, downbeat_state_space_1D
 
 
 class BDObservationModel:
