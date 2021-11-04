@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fadffd9a-115c-48cb-88c4-ba0320978b52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dist/jump_reward_inference-0.0.4-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/jump_reward_inference-0.0.4-py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/dist/jump_reward_inference-0.0.4-py3-none-any.whl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/jump_reward_inference-0.0.4.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/jump_reward_inference-0.0.4.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jump_reward_inference/joint_tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/jump_reward_inference/joint_tracker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/dependency_links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/dependency_links.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/requires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/requires.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/top_level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/jump_reward_inference.egg-info/top_level.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
