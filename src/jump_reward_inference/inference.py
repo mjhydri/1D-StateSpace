@@ -29,6 +29,12 @@ class BDObservationModel:
         beat tracking method using RNN and enhanced particle filtering,” in In Proc. IEEE Int. Conf. Acoust. Speech
         Signal Process. (ICASSP), 2021.
 
+        M. Heydari, F. Cwitkowitz, and Z. Duan, “BeatNet:CRNN and particle filtering for online joint beat down-beat
+        and meter tracking,” in Proc. of the 22th Intl. Conf.on Music Information Retrieval (ISMIR), 2021.
+
+        M. Heydari and Z. Duan, “Don’t Look Back: An online beat tracking method using RNN and enhanced
+        particle filtering,” in Proc. IEEE Int. Conf. Acoust. Speech Signal Process. (ICASSP), 2021.
+
 
     """
 
@@ -132,8 +138,7 @@ class inference_1D:
 
     '''
     MIN_BPM = 55.
-    MAX_BPM = 200.  # 215.
-    NUM_TEMPI = 300
+    MAX_BPM = 215. 
     LAMBDA_B = 0.01  # beat transition lambda
     Lambda_D = 0.01  # downbeat transition lambda
     OBSERVATION_LAMBDA = "B56"
@@ -169,7 +174,7 @@ class inference_1D:
         self.om2 = BDObservationModel(self.st2, "B60")  # downbeat tracking observation model
         pass
 
-    def process(self, activations, **kwargs):
+    def process(self, activations):
         T = 1 / self.fps
         font = {'color': 'green', 'weight': 'normal', 'size': 12}
         counter = 0
@@ -275,14 +280,14 @@ class inference_1D:
                     self.st2.jump_weights[:self.st2.min_interval - 1] = 0
                     down_max = np.argmax(down_distribution)
 
-                #  Beat vs Downbeat distinguishment
+                #  Beat vs Downbeat mark off
                 if down_max == self.st2.first_states[0]:
                     output = np.append(output, [[counter * T + self.offset, 1, local_tempo, meter]], axis=0)
                     last_detected = "Downbeat"
                 else:
                     output = np.append(output, [[counter * T + self.offset, 2, local_tempo, meter]], axis=0)
                     last_detected = "Beat"
-                if self.plot and counter>5000: #and counter>5000
+                if self.plot:
                     subplot3.cla()
                     subplot4.cla()
                     down_distribution = down_distribution / np.max(down_distribution)
@@ -303,7 +308,7 @@ class inference_1D:
                     position2 = down_max
                     subplot3.axvline(x=position2)
 
-            if self.plot and counter>5000:  # and counter>5000  # activates this when you want to plot the performance
+            if self.plot:  # activates this when you want to plot the performance
                 if counter % 1 == 0:  # Choosing how often to plot
                     print(counter)
                     subplot1.cla()

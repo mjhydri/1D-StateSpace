@@ -23,7 +23,7 @@ class beat_state_space_1D(state_space_1D):
 
     def __init__(self, alpha=0.01, tempo=None, fps=None, min_interval=None, max_interval=None):
         super().__init__(min_interval, max_interval)
-        self.jump_weights = np.concatenate((np.zeros(self.min_interval), np.array([alpha] * (self.max_interval - self.min_interval)), ))
+        self.jump_weights = np.concatenate((np.zeros(self.min_interval), np.array([alpha] * (self.max_interval - self.min_interval)),))
         if tempo and fps:
             self.jump_weights[round(60. * fps / tempo) - self.min_interval] = 1 - alpha
 
@@ -32,7 +32,7 @@ class downbeat_state_space_1D(state_space_1D):
 
     def __init__(self, alpha=0.1, meter=None, min_beats_per_bar=None, max_beats_per_bar=None):
         super().__init__(min_beats_per_bar, max_beats_per_bar)
-        self.jump_weights = np.concatenate((np.zeros(self.min_interval-1), np.array([alpha] * (self.max_interval - self.min_interval+1)), ))
+        self.jump_weights = np.concatenate((np.zeros(self.min_interval-1), np.array([alpha] * (self.max_interval - self.min_interval+1)),))
         if meter:
             self.jump_weights[meter[0] - self.min_interval+1] = 1 - alpha
         pass
