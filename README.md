@@ -100,7 +100,7 @@ Many thanks to the Pandora/SiriusXM Inc. research team for making it legal to pu
 References:
 -----------
 M. Heydari, M. McCallum, A. Ehmann and Z. Duan, "A Novel 1D State Space for Efficient Music Rhythmic Analysis", In Proc. IEEE Int. Conf. Acoust. Speech
-Signal Process. (ICASSP), 2022. #(Submitted)
+Signal Process. (ICASSP), 2022. #(Recently Submitted)
 
 M.  Heydari,  F.  Cwitkowitz,  and  Z.  Duan,    “BeatNet:CRNN and particle filtering for online joint beat down-beat and meter tracking,” in Proc. of the 22th Intl. 
 Conf.on Music Information Retrieval (ISMIR), 2021.
