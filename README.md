@@ -42,7 +42,7 @@ pip install git+https://github.com/mjhydri/1D-StateSpace
  
 If Pyaudio is not installed in your machine, download an appropriate version for your machine from *[here](https://www.lfd.uci.edu/~gohlke/pythonlibs/)*. Then, direct to the file location through commandline and use the following command to install the wheel file locally:
 ```
-pip install <Pyaudio file_name>   
+pip install <Pyaudio_file_name.whl>   
 ```
 Usage Example:
 --------------
