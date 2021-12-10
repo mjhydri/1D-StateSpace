@@ -28,7 +28,7 @@ class joint_inference():
         self.estimator = inference_1D(beats_per_bar=[], fps=50, plot=plot)
 
     def process(self, audio_path):
-        preds = self.activation_estimator.activation_extractor(
+        preds = self.activation_estimator.activation_extractor_online(
             audio_path)  # extracting the activations using the BeatNet nueral network
         output = self.estimator.process(
             preds)  # infering online joing beat, downbeat, tempo and meter using the 1D state space and jump back reward technique

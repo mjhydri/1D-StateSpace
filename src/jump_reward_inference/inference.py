@@ -287,6 +287,7 @@ class inference_1D:
                 else:
                     output = np.append(output, [[counter * T + self.offset, 2, local_tempo, meter]], axis=0)
                     last_detected = "Beat"
+                #  Downbeat probability mass and weights
                 if self.plot:
                     subplot3.cla()
                     subplot4.cla()
@@ -307,7 +308,8 @@ class inference_1D:
                                   verticalalignment='center', transform=subplot2.transAxes, fontdict=font)
                     position2 = down_max
                     subplot3.axvline(x=position2)
-
+                    
+            #  Downbeat probability mass and weights
             if self.plot:  # activates this when you want to plot the performance
                 if counter % 1 == 0:  # Choosing how often to plot
                     print(counter)
@@ -328,7 +330,6 @@ class inference_1D:
                                   verticalalignment='top', transform=subplot2.transAxes, fontdict=font)
                     position = beat_max
                     subplot1.axvline(x=position)
-                    # plt.show()
                     plt.pause(0.05)
                     subplot1.clear()
 

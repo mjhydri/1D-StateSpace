@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: jump-reward-inference
-Version: 0.0.6
+Version: 0.0.7
 Summary: A package for online music joint rhythmic parameters tracking including beats, downbeats, tempo and meter using the BeatNet AI, a super compact 1D state space and the jump back reward technique
 Home-page: https://github.com/mjhydri/1D-StateSpace
 Author: Mojtaba Heydari
