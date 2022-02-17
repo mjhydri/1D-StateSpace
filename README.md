@@ -4,6 +4,7 @@ An implementation of the probablistic jump reward inference model for music rhyt
 
 [![PyPI](https://img.shields.io/pypi/v/jump-reward-inference.svg)](https://pypi.org/project/jump-reward-inference/)
 [![CC BY 4.0][cc-by-shield]][cc-by]
+[![Downloads](https://pepy.tech/badge/jump-reward-inference)](https://pepy.tech/project/jump-reward-inference)
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
