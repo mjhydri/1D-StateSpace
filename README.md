@@ -57,7 +57,7 @@ Video Tutorial:
 ------------
 1: In this tutorial, we explain the proposed 1D state space and the mechanism of the jump=back reward technique.  
   
-[![Tutorial](https://img.youtube.com/vi/LMdJdrLGEXo/0.jpg)](https://youtu.beLMdJdrLGEXo)
+[![Tutorial](https://img.youtube.com/vi/LMdJdrLGEXo/0.jpg)](https://youtu.be/LMdJdrLGEXo)
 
 Video Demos:
 ------------
