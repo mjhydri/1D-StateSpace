@@ -52,6 +52,13 @@ estimator = joint_inference(1, plot=True)
 
 output = estimator.process("music file directory")
 ```
+
+Video Tutorial:
+------------
+1: In this tutorial, we explain the proposed 1D state space and the mechanism of the jump=back reward technique.  
+  
+[![Tutorial](https://img.youtube.com/vi/LMdJdrLGEXo/0.jpg)](https://youtu.beLMdJdrLGEXo)
+
 Video Demos:
 ------------
 
@@ -61,6 +68,7 @@ This section demonstrates the system performance for several music genres. Each 
 * The second plot: The jump-back reward vector for the corresponding beat states. 
 * The third plot:1D state space for music downbeat and meter tracking.
 * The fourth plot: The jump-back reward vector for the corresponding downbeat states. 
+
 
 
 1: Music Genre: Pop
