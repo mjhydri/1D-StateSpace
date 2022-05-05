@@ -5,6 +5,7 @@ An implementation of the probablistic jump reward semi_Markov inference model fo
 [![PyPI](https://img.shields.io/pypi/v/jump-reward-inference.svg)](https://pypi.org/project/jump-reward-inference/)
 [![CC BY 4.0][cc-by-shield]][cc-by]
 [![Downloads](https://pepy.tech/badge/jump-reward-inference)](https://pepy.tech/project/jump-reward-inference)
+[![arXiv](https://img.shields.io/badge/arXiv-2111.00704-b31b1b.svg)](https://arxiv.org/abs/2111.00704)
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
@@ -13,9 +14,6 @@ An implementation of the probablistic jump reward semi_Markov inference model fo
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-novel-1d-state-space-for-efficient-music/online-beat-tracking-on-gtzan)](https://paperswithcode.com/sota/online-beat-tracking-on-gtzan?p=a-novel-1d-state-space-for-efficient-music)
 
 This repository contains the source code and demo videos of a joint music rhythmic analyzer system using the 1D state space and jump reward technique proposed in ICASSP-2022. This implementation includes music beat, downbeat, tempo, and meter tracking jointly and in a causal fashion. 
-
-[![arXiv](https://img.shields.io/badge/arXiv-2111.00704-b31b1b.svg)](https://arxiv.org/abs/2111.00704)
-
 
 The model first takes the waveform to the spectral domain and then feeds them into one of the pre-trained BeatNet models to obtain beat/downbeat activations.
 Finally, the activations are used in a jump-reward inference model to infer beats, downbeats, tempo, and meter. 
