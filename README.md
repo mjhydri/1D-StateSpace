@@ -14,7 +14,8 @@ An implementation of the probablistic jump reward semi_Markov inference model fo
 
 This repository contains the source code and demo videos of a joint music rhythmic analyzer system using the 1D state space and jump reward technique proposed in ICASSP-2022. This implementation includes music beat, downbeat, tempo, and meter tracking jointly and in a causal fashion. 
 
-*[arXiv 2111.00704](https://arxiv.org/abs/2111.00704)*
+[![arXiv](https://img.shields.io/badge/arXiv-2111.00704-b31b1b.svg)](https://arxiv.org/abs/2111.00704)
+
 
 The model first takes the waveform to the spectral domain and then feeds them into one of the pre-trained BeatNet models to obtain beat/downbeat activations.
 Finally, the activations are used in a jump-reward inference model to infer beats, downbeats, tempo, and meter. 
@@ -111,6 +112,8 @@ Demos Discussion:
 Acknowledgement
 ---------------
 Many thanks to the Pandora/SiriusXM Inc. research team for making it legal to publish the project's source code. To load the raw audio and input features extraction [Librosa](https://github.com/librosa/librosa) and [Madmom](https://github.com/CPJKU/madmom) libraries are ustilzed respectively. Many thanks for their great jobs. This work has been partially supported by the National Science Foundation grant 1846184.
+
+*[arXiv 2111.00704](https://arxiv.org/abs/2111.00704)*
 
 References:
 -----------
