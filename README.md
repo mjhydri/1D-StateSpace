@@ -47,6 +47,9 @@ pip install <Pyaudio_file_name.whl>
 Usage Example:
 --------------
 ```
+from jump_reward_inference.joint_tracker import joint_inference
+
+
 estimator = joint_inference(1, plot=True) 
 
 output = estimator.process("music file directory")
