@@ -4,9 +4,9 @@ This is the user script of the causal deterministic jump-back reward inference m
 The model first takes the waveform to the spectral domain and then feeds them into one of the pre-trained BeatNet models to obtain beat/downbeat activations.
 Finally, the activations are used in a jump-reward inference model to infer beats, downbeats, tempo, and meter. 
 
-system input: Raw audio waveform 
+System input: Raw audio waveform 
 
-System output: a vector with beats, downbeats, local tempo, and local meter columns, respectively.  shape (num_beats, 4).
+System output: A vector with beats, downbeats, local tempo, and local meter columns, respectively.  shape (num_beats, 4).
 
 
 References: 
@@ -29,8 +29,8 @@ class joint_inference():
 
     def process(self, audio_path):
         preds = self.activation_estimator.activation_extractor_online(
-            audio_path)  # extracting the activations using the BeatNet nueral network
+            audio_path)  # extracting the activations using the BeatNet neural network
         output = self.estimator.process(
-            preds)  # infering online joing beat, downbeat, tempo and meter using the 1D state space and jump back reward technique
+            preds)  # inferring online joint beat, downbeat, tempo and meter using the 1D state space and jump back reward technique
         return output
 
