@@ -1,5 +1,6 @@
 """
-Created on 10-29-21 by Mojtaba Heydari
+Created on 10-29-21 by Mojtaba Heydari  <mheydari@ur.rochester.edu>
+
 """
 
 
@@ -71,8 +72,8 @@ setuptools.setup(
 
     # Metadata to display on PyPI
     author="Mojtaba Heydari",
-    author_email="mhydari@ur.rochester.edu",
-    description="A package for online music joint rhythmic parameters tracking including beats, downbeats, tempo and meter using the BeatNet AI, a super compact 1D state space and the jump back reward technique",
+    author_email="mheydari@ur.rochester.edu",
+    description="A package for fast real-time music joint rhythmic parameters tracking including beats, downbeats, tempo and meter using the BeatNet AI, a super compact 1D state space and the jump back reward technique",
     keywords="Beat tracking, Downbeat tracking, meter detection, tempo tracking, 1D state space, jump reward technique, efficient state space, ",
     url="https://github.com/mjhydri/1D-StateSpace"
 
