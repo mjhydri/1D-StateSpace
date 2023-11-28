@@ -1,3 +1,6 @@
+# Author: Mojtaba Heydari <mheydari@ur.rochester.edu>
+
+
 """
 This is the user script of the causal deterministic jump-back reward inference model on the proposed 1D state space.
 
