@@ -1,14 +1,19 @@
 Metadata-Version: 2.1
 Name: jump-reward-inference
-Version: 0.0.7
-Summary: A package for online music joint rhythmic parameters tracking including beats, downbeats, tempo and meter using the BeatNet AI, a super compact 1D state space and the jump back reward technique
+Version: 0.0.8
+Summary: A package for fast real-time music joint rhythmic parameters tracking including beats, downbeats, tempo and meter using the BeatNet AI, a super compact 1D state space and the jump back reward technique
 Home-page: https://github.com/mjhydri/1D-StateSpace
 Author: Mojtaba Heydari
-Author-email: mhydari@ur.rochester.edu
-License: UNKNOWN
+Author-email: mheydari@ur.rochester.edu
 Keywords: Beat tracking,Downbeat tracking,meter detection,tempo tracking,1D state space,jump reward technique,efficient state space,
-Platform: UNKNOWN
 License-File: LICENSE
-
-UNKNOWN
-
+Requires-Dist: numpy
+Requires-Dist: Cython
+Requires-Dist: librosa>=0.8.0
+Requires-Dist: numba==0.54.1
+Requires-Dist: mido>=1.2.6
+Requires-Dist: pytest
+Requires-Dist: torch
+Requires-Dist: Matplotlib
+Requires-Dist: BeatNet>=0.0.4
+Requires-Dist: madmom
