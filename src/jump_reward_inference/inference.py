@@ -1,3 +1,6 @@
+# Author: Mojtaba Heydari <mheydari@ur.rochester.edu>
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from jump_reward_inference.state_space_1D import beat_state_space_1D, downbeat_state_space_1D
