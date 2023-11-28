@@ -1,3 +1,6 @@
+# Author: Mojtaba Heydari <mheydari@ur.rochester.edu>
+
+
 import numpy as np
 
 
